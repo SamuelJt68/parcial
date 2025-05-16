@@ -11,7 +11,7 @@ export class ServiceMainService {
 
   constructor() { }
 
-  getSeries() {
-    return this.http.get('');
+  getAir() {
+    return this.http.get('https://raw.githubusercontent.com/NoNameLab/ISIS2603_Parcial2_S6_202510/refs/heads/main/flights.json');
   }
 }
