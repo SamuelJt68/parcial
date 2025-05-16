@@ -11,7 +11,7 @@ import { ServiceMainService } from '../service-main.service';
 export class AppComponent {
 
   air: ServiceMainService[] = [];
-  @Output() airService: EventEmitter<ServiceMainService[]> = new EventEmitter<ServiceMainService[]>();
+  @Output() airService = new EventEmitter<ServiceMainService[]>();
 
   constructor(public service: ServiceMainService) {
     this.service.getAir().subscribe((data: ServiceMainService[]) => {

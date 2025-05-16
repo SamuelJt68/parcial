@@ -1,0 +1,16 @@
+<div id="tittle">Air</div>
+<div id="content">
+    <div id="table">
+        <app-root airService="recibirAir($event)"></app-listar-serie>
+        <table>
+            <tr>
+                <th>Air</th>
+            </tr>
+            @for (air of lista_air; track air) {
+            <tr (click)="toggleDescription(air.id)">
+                <td>{{air.name}}</td>
+            </tr>
+            }
+        </table>
+    </div>
+</div>
